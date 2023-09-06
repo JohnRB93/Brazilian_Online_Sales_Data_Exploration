@@ -3,36 +3,17 @@
 /* What could be some reasons for this?                                                                                       */
 /******************************************************************************************************************************/
 
---What areas have the most customers and orders?
-SELECT TOP 51 c.customer_city AS city, c.customer_state AS _state, COUNT(DISTINCT c.customer_id) AS count_of_customers
+--What areas have the most customers?
+SELECT c.customer_city AS city, c.customer_state AS _state, COUNT(DISTINCT c.customer_id) AS count_of_customers
 FROM customers c
 GROUP BY GROUPING SETS(c.customer_city, c.customer_state)
 ORDER BY count_of_customers DESC;
 
-SELECT TOP 51 c.customer_city AS city, c.customer_state AS _state, COUNT(DISTINCT o.order_id) AS numOfOrders
-FROM customers c
-JOIN orders o ON c.customer_id = o.customer_id
-GROUP BY GROUPING SETS(c.customer_city, c.customer_state)
-ORDER BY numOfOrders DESC;
-/*
-Both queries return the same result.
-The top 5 States with the most customers are SP, RJ, MG, RS, PR.
-The top 5 Cities with the most customers are Sao Paulo, Rio De Janeiro, Brasilia, Curitiba, Campinas
-*/
-
 --Where are the seller most concentrated in?
-SELECT TOP 50 s.seller_city AS city, s.seller_state AS _state, COUNT(s.seller_id) AS count_of_sellers
+SELECT s.seller_city AS city, s.seller_state AS _state, COUNT(DISTINCT s.seller_id) AS count_of_sellers
 FROM sellers s
 GROUP BY GROUPING SETS(s.seller_city, s.seller_state)
 ORDER BY count_of_sellers DESC;
-/*
-The top 5 States with the most sellers are SP, PR, MG, RC, RJ.
-The top 5 Cities with the most sellers are Sao Paulo, Curitiba, Rio De Janeiro, Belo Horizonte, Ribeirao Preto
-*/
-/*
-Based on the results of the queries, there seems to be a correlation between where sellers are located and where
-customers and orders are concentrated in.
-*/
 
 
 /******************************************************************************************************************************/
@@ -65,10 +46,6 @@ JOIN products p ON mpp._product_id = p.product_id
 JOIN product_category_name_translation pcnt ON p.product_category_name = pcnt.product_category_name
 GROUP BY p.product_category_name, pcnt.product_category_name_english
 ORDER BY total_sold DESC;
-/*
-The product categories that have the most items sold are bed_bath_table, sports_leisure, furniture_decor,
-health_beauty, housewares.
-*/
 
 --What is the average review score of the most popular items?
 SELECT t10.product_id, AVG(o_r.review_score) AS average_review
@@ -78,10 +55,6 @@ JOIN order_items oi ON o.order_id = oi.order_id
 JOIN top_10_products t10 ON oi.product_id = t10.product_id
 GROUP BY t10.product_id
 ORDER BY average_review DESC;
-/*
-The average rating (1 being worst, 5 being best) for the top ten products
-ranges from 3.87 to 4.32.
-*/
 
 --What are the prices of these products?
 SELECT DISTINCT t10.product_id, AVG(oi.price) AS average_price
@@ -89,12 +62,6 @@ FROM order_items oi
 JOIN top_10_products t10 ON oi.product_id = t10.product_id
 GROUP BY t10.product_id
 ORDER BY average_price DESC;
-/*
-The prices of these products range from R$19.99 to R$189.99.
-Note: Some or all of these items are sold from multiple sellers and those sellers may sell the same
-	  item at different prices. So I found the average price of each item on the _product_id column.
-	  Also, the currency used is Brazilian Real (denoted as R$).
-*/
 
 --Find if there is a correlation between the price of an item and the review of an item.
 SELECT t10.product_id, oi.price, o_r.review_score, COUNT(t10.product_id) AS count_of_score
@@ -105,11 +72,6 @@ JOIN top_10_products t10 ON oi.product_id = t10.product_id
 --WHERE o_r.review_score = 5 OR o_r.review_score = 1
 GROUP BY t10.product_id, oi.price, o_r.review_score
 ORDER BY t10.product_id, oi.price DESC, o_r.review_score DESC;
-/*
-There doesn't appear to be any correlation between the price of the product and
-the review score that the product recieved. With each price of each product, most
-scores fall into either a 4 or a 5.
-*/
 
 --What type of payment arrangements are most common with most popular items?
 SELECT t10.product_id, op.payment_type, COUNT(op.order_id) AS count_of_payment_type
@@ -119,9 +81,6 @@ JOIN order_items oi ON o.order_id = oi.order_id
 JOIN top_10_products t10 ON oi.product_id = t10.product_id
 GROUP BY t10.product_id, t10.number_sold, op.payment_type
 ORDER BY t10.number_sold DESC
-/*
-For the most popular items, credit cards are the most popular payment method.
-*/
 
 
 /******************************************************************************************************************************/
@@ -161,14 +120,79 @@ WITH top_20_sellers AS
 	GROUP BY s.seller_id
 	ORDER BY total_sales DESC
 )
-
 SELECT DISTINCT t20s.seller_id, t10.product_id, SUM(oi.order_item_id) AS number_sold
 FROM top_10_products t10
 JOIN order_items oi ON t10.product_id = oi.product_id
 JOIN top_20_sellers t20s ON oi.seller_id = t20s.seller_id
 GROUP BY t20s.seller_id, t10.product_id
 ORDER BY t20s.seller_id, number_sold DESC;
-/*
-All of the top 10 products are being sold by top performing sellers, particularly from
-seller_id 1f50f920176fa81dab994f9023523100.
-*/
+
+--What is the rate at which the 'order_delivered_customer_date' predate or meets the 'order_estimated_delivery_date'?
+--Does this have a positive correlation with review scores?
+CREATE VIEW delivery_outcomes AS
+	SELECT o.order_id, o.order_estimated_delivery_date AS estimated_delivery_date, o.order_delivered_customer_date AS delivered_date,
+		CASE 
+			WHEN o.order_delivered_customer_date <= o.order_estimated_delivery_date
+				THEN 'On time'
+			WHEN o.order_delivered_customer_date > o.order_estimated_delivery_date
+				THEN 'Late'
+			WHEN o.order_delivered_customer_date IS NULL
+				THEN 'Cancelled'
+		END AS delivery_outcome
+	FROM orders o;
+
+SELECT COUNT(delivery_outcome) AS count_of_ontime_delivery
+FROM delivery_outcomes
+WHERE delivery_outcome = 'On time';
+
+SELECT COUNT(delivery_outcome) AS count_of_late_delivery
+FROM delivery_outcomes
+WHERE delivery_outcome = 'Late';
+
+SELECT COUNT(delivery_outcome) AS count_of_cancelled_delivery
+FROM delivery_outcomes
+WHERE delivery_outcome = 'Cancelled';
+
+--What percentage of orders are delivered on time?
+SELECT TOP 1
+ROUND(((
+	SELECT CAST(COUNT(delivery_outcome) AS float) --AS count_of_ontime_delivery
+	FROM delivery_outcomes
+	WHERE delivery_outcome = 'On time'
+) / (
+	SELECT CAST(COUNT(delivery_outcome) AS float) --AS total_count_of_deliveries
+	FROM delivery_outcomes
+)) * 100, 5) AS percent_delivered_ontime
+FROM delivery_outcomes;
+
+--What percentage of orders are delivered late?
+SELECT TOP 1
+ROUND(((
+	SELECT CAST(COUNT(delivery_outcome) AS float) --AS count_of_late_delivery
+	FROM delivery_outcomes
+	WHERE delivery_outcome = 'Late'
+) / (
+	SELECT CAST(COUNT(delivery_outcome) AS float) --AS total_count_of_deliveries
+	FROM delivery_outcomes
+)) * 100, 5) AS percent_delivered_late
+FROM delivery_outcomes;
+
+--What percentage of orders are cancelled?
+SELECT TOP 1
+ROUND(((
+	SELECT CAST(COUNT(delivery_outcome) AS float) --AS count_of_cancelled_deliveries
+	FROM delivery_outcomes
+	WHERE delivery_outcome = 'Cancelled'
+) / (
+	SELECT CAST(COUNT(delivery_outcome) AS float) --AS total_count_of_deliveries
+	FROM delivery_outcomes
+)) * 100, 5) AS percent_cancelled_deliveries
+FROM delivery_outcomes;
+
+--Find if orders that have been delivered on time have higher average reviews
+--than orders that were delivered late.
+SELECT do.delivery_outcome, ROUND(AVG(o_r.review_score), 2) AS average_score
+FROM delivery_outcomes do
+JOIN order_reviews o_r on do.order_id = o_r.order_id
+GROUP BY do.delivery_outcome
+ORDER BY average_score DESC;

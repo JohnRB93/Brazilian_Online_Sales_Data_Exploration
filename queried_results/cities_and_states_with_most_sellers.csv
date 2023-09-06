@@ -1,0 +1,634 @@
+﻿NULL,SP,1849
+sao paulo,NULL,694
+NULL,PR,349
+NULL,MG,244
+NULL,SC,190
+NULL,RJ,171
+NULL,RS,129
+curitiba,NULL,127
+rio de janeiro,NULL,96
+belo horizonte,NULL,68
+ribeirao preto,NULL,52
+guarulhos,NULL,50
+ibitinga,NULL,49
+santo andre,NULL,45
+campinas,NULL,41
+NULL,GO,40
+maringa,NULL,40
+sao jose do rio preto,NULL,33
+sao bernardo do campo,NULL,32
+sorocaba,NULL,32
+osasco,NULL,32
+NULL,DF,30
+brasilia,NULL,28
+porto alegre,NULL,28
+londrina,NULL,26
+NULL,ES,23
+goiania,NULL,23
+joinville,NULL,22
+blumenau,NULL,21
+franca,NULL,20
+sao caetano do sul,NULL,20
+NULL,BA,19
+florianopolis,NULL,18
+caxias do sul,NULL,18
+sao jose dos campos,NULL,18
+limeira,NULL,17
+santos,NULL,16
+marilia,NULL,15
+mogi das cruzes,NULL,15
+jundiai,NULL,14
+bauru,NULL,14
+cascavel,NULL,14
+barueri,NULL,13
+NULL,CE,13
+maua,NULL,13
+sao carlos,NULL,13
+rio claro,NULL,12
+uberlandia,NULL,12
+presidente prudente,NULL,12
+piracicaba,NULL,12
+contagem,NULL,12
+araraquara,NULL,11
+atibaia,NULL,11
+arapongas,NULL,10
+americana,NULL,10
+birigui,NULL,10
+brusque,NULL,10
+carapicuiba,NULL,10
+cotia,NULL,10
+catanduva,NULL,10
+itajai,NULL,10
+praia grande,NULL,10
+juiz de fora,NULL,10
+taboao da serra,NULL,10
+sao jose dos pinhais,NULL,10
+santana de parnaiba,NULL,9
+salto,NULL,9
+jaragua do sul,NULL,9
+porto ferreira,NULL,9
+pedreira,NULL,9
+itaquaquecetuba,NULL,9
+diadema,NULL,9
+canoas,NULL,9
+NULL,PE,9
+apucarana,NULL,8
+assis,NULL,8
+divinopolis,NULL,8
+colombo,NULL,8
+indaiatuba,NULL,8
+palhoca,NULL,8
+pinhais,NULL,8
+niteroi,NULL,8
+mogi guacu,NULL,8
+toledo,NULL,8
+sao roque,NULL,7
+salvador,NULL,7
+sao goncalo,NULL,7
+jacarei,NULL,7
+fortaleza,NULL,7
+valinhos,NULL,7
+fazenda rio grande,NULL,6
+claudio,NULL,6
+guaruja,NULL,6
+NULL,PB,6
+santa rita do sapucai,NULL,6
+ribeirao pires,NULL,6
+taubate,NULL,6
+uba,NULL,6
+lencois paulista,NULL,6
+ponta grossa,NULL,6
+novo hamburgo,NULL,6
+petropolis,NULL,6
+pocos de caldas,NULL,5
+recife,NULL,5
+nova friburgo,NULL,5
+nova iguacu,NULL,5
+lajeado,NULL,5
+tubarao,NULL,5
+sumare,NULL,5
+penapolis,NULL,5
+sao jose,NULL,5
+amparo,NULL,5
+NULL,RN,5
+NULL,MS,5
+betim,NULL,5
+braganca paulista,NULL,5
+foz do iguacu,NULL,5
+vila velha,NULL,5
+vitoria,NULL,4
+votorantim,NULL,4
+votuporanga,NULL,4
+francisco beltrao,NULL,4
+formiga,NULL,4
+fernandopolis,NULL,4
+criciuma,NULL,4
+capivari,NULL,4
+garca,NULL,4
+itu,NULL,4
+itatiba,NULL,4
+jaci,NULL,4
+jaguariuna,NULL,4
+itapecerica da serra,NULL,4
+itapevi,NULL,4
+cachoeiro de itapemirim,NULL,4
+campo grande,NULL,4
+barra mansa,NULL,4
+barretos,NULL,4
+borda da mata,NULL,4
+botucatu,NULL,4
+NULL,MT,4
+aracatuba,NULL,4
+araguari,NULL,4
+rio do sul,NULL,4
+santa barbara d'oeste,NULL,4
+sp,NULL,4
+sete lagoas,NULL,4
+tupa,NULL,4
+umuarama,NULL,4
+varginha,NULL,4
+jau,NULL,4
+mirassol,NULL,4
+paulinia,NULL,4
+osvaldo cruz,NULL,3
+pelotas,NULL,3
+navegantes,NULL,3
+pompeia,NULL,3
+mesquita,NULL,3
+loanda,NULL,3
+marechal candido rondon,NULL,3
+mogi mirim,NULL,3
+montes claros,NULL,3
+morrinhos,NULL,3
+laranjal paulista,NULL,3
+macae,NULL,3
+tatui,NULL,3
+uberaba,NULL,3
+tres coracoes,NULL,3
+serra,NULL,3
+serra negra,NULL,3
+suzano,NULL,3
+tabatinga,NULL,3
+sarandi,NULL,3
+sao paulo - sp,NULL,3
+rolandia,NULL,3
+sao joao de meriti,NULL,3
+sao bento do sul,NULL,3
+santa maria,NULL,3
+santa terezinha de itaipu,NULL,3
+araras,NULL,3
+anapolis,NULL,3
+artur nogueira,NULL,3
+aruja,NULL,3
+balneario camboriu,NULL,3
+boituva,NULL,3
+batatais,NULL,3
+bento goncalves,NULL,3
+campo largo,NULL,3
+cachoeirinha,NULL,3
+cambe,NULL,3
+carazinho,NULL,3
+jacutinga,NULL,3
+guaratuba,NULL,3
+conselheiro lafaiete,NULL,3
+chapeco,NULL,3
+ferraz de vasconcelos,NULL,3
+duque de caxias,NULL,3
+vargem grande do sul,NULL,3
+venancio aires,NULL,3
+viamao,NULL,2
+xanxere,NULL,2
+vicosa,NULL,2
+videira,NULL,2
+volta redonda,NULL,2
+echapora,NULL,2
+embu das artes,NULL,2
+dois corregos,NULL,2
+dores de campos,NULL,2
+cuiaba,NULL,2
+farroupilha,NULL,2
+estancia velha,NULL,2
+formosa,NULL,2
+franco da rocha,NULL,2
+flores da cunha,NULL,2
+caruaru,NULL,2
+conchal,NULL,2
+coronel fabriciano,NULL,2
+cosmopolis,NULL,2
+curitibanos,NULL,2
+gaspar,NULL,2
+guaira,NULL,2
+garopaba,NULL,2
+ipatinga,NULL,2
+igaracu do tiete,NULL,2
+hortolandia,NULL,2
+jaboticabal,NULL,2
+jaguaruna,NULL,2
+itauna,NULL,2
+itapetininga,NULL,2
+itajobi,NULL,2
+ipira,NULL,2
+imbituba,NULL,2
+indaial,NULL,2
+itaipulandia,NULL,2
+cariacica,NULL,2
+castro,NULL,2
+canoinhas,NULL,2
+campo bom,NULL,2
+cajamar,NULL,2
+cafelandia,NULL,2
+campo limpo paulista,NULL,2
+belford roxo,NULL,2
+bariri,NULL,2
+bady bassitt,NULL,2
+baependi,NULL,2
+armacao dos buzios,NULL,2
+andradas,NULL,2
+araucaria,NULL,2
+araxa,NULL,2
+NULL,RO,2
+NULL,SE,2
+alfenas,NULL,2
+santa barbara d´oeste,NULL,2
+sao joao del rei,NULL,2
+sao jose do rio pardo,NULL,2
+sao leopoldo,NULL,2
+sao ludgero,NULL,2
+santa rosa,NULL,2
+rodeio,NULL,2
+ribeirao das neves,NULL,2
+rio bonito,NULL,2
+sao pedro,NULL,2
+sombrio,NULL,2
+tiradentes,NULL,2
+tanabi,NULL,2
+teresopolis,NULL,2
+timbo,NULL,2
+treze tilias,NULL,2
+uruacu,NULL,2
+mairipora,NULL,2
+laurentino,NULL,2
+lauro de freitas,NULL,2
+lorena,NULL,2
+joao pessoa,NULL,2
+lagoa da prata,NULL,2
+lages,NULL,2
+montenegro,NULL,2
+natal,NULL,2
+pinhalzinho,NULL,2
+pitanga,NULL,2
+registro,NULL,2
+porto belo,NULL,2
+pradopolis,NULL,2
+nova odessa,NULL,2
+nilopolis,NULL,2
+pato branco,NULL,2
+patos de minas,NULL,2
+paulo lopes,NULL,2
+pederneiras,NULL,1
+pedregulho,NULL,1
+ourinhos,NULL,1
+ouro fino,NULL,1
+ouro preto,NULL,1
+pacatuba,NULL,1
+paincandu,NULL,1
+pedrinhas paulista,NULL,1
+pedro leopoldo,NULL,1
+picarras,NULL,1
+pilar do sul,NULL,1
+nova petropolis,NULL,1
+nova trento,NULL,1
+neopolis,NULL,1
+nhandeara,NULL,1
+"novo hamburgo, rio grande do sul, brasil",NULL,1
+novo horizonte,NULL,1
+olimpia,NULL,1
+oliveira,NULL,1
+orlandia,NULL,1
+orleans,NULL,1
+palotina,NULL,1
+paracambi,NULL,1
+parai,NULL,1
+paraiba do sul,NULL,1
+paraiso do sul,NULL,1
+parana,NULL,1
+paranavai,NULL,1
+parnamirim,NULL,1
+passos,NULL,1
+pato bragado,NULL,1
+prados,NULL,1
+presidente bernardes,NULL,1
+presidente epitacio,NULL,1
+presidente getulio,NULL,1
+resende,NULL,1
+queimados,NULL,1
+ribeirao preto / sao paulo,NULL,1
+ribeirao pretp,NULL,1
+riberao preto,NULL,1
+pitangueiras,NULL,1
+poa,NULL,1
+pirassununga,NULL,1
+pirituba,NULL,1
+piracanjuba,NULL,1
+pinhais/pr,NULL,1
+pinhalao,NULL,1
+ponte nova,NULL,1
+portao,NULL,1
+porto seguro,NULL,1
+porto velho,NULL,1
+portoferreira,NULL,1
+pouso alegre,NULL,1
+mogi das cruzes / sp,NULL,1
+nova lima,NULL,1
+mucambo,NULL,1
+muqui,NULL,1
+muriae,NULL,1
+mombuca,NULL,1
+monte alegre do sul,NULL,1
+monte alto,NULL,1
+monte siao,NULL,1
+monteiro lobato,NULL,1
+marialva,NULL,1
+marica,NULL,1
+massaranduba,NULL,1
+mateus leme,NULL,1
+messias targino,NULL,1
+miguelopolis,NULL,1
+minas gerais,NULL,1
+mineiros do tiete,NULL,1
+mirandopolis,NULL,1
+mococa,NULL,1
+mogi das cruses,NULL,1
+maua/sao paulo,NULL,1
+medianeira,NULL,1
+lages - sc,NULL,1
+jussara,NULL,1
+juzeiro do norte,NULL,1
+lagoa santa,NULL,1
+laguna,NULL,1
+lambari,NULL,1
+joao pinheiro,NULL,1
+ji parana,NULL,1
+joao monlevade,NULL,1
+jarinu,NULL,1
+louveira,NULL,1
+luiz alves,NULL,1
+luziania,NULL,1
+leme,NULL,1
+laranjeiras do sul,NULL,1
+mamanguape,NULL,1
+manaus,NULL,1
+mandaguacu,NULL,1
+mandaguari,NULL,1
+mandirituba,NULL,1
+marapoama,NULL,1
+macatuba,NULL,1
+mage,NULL,1
+mairinque,NULL,1
+uruguaiana,NULL,1
+uniao da vitoria,NULL,1
+varzea alegre,NULL,1
+varzea paulista,NULL,1
+vassouras,NULL,1
+triunfo,NULL,1
+ubatuba,NULL,1
+timoteo,NULL,1
+terra boa,NULL,1
+tiete,NULL,1
+taruma,NULL,1
+teixeira soares,NULL,1
+teresina,NULL,1
+tocantins,NULL,1
+torres,NULL,1
+tres coroas,NULL,1
+tres de maio,NULL,1
+tres rios,NULL,1
+taio,NULL,1
+tambau,NULL,1
+tabao da serra,NULL,1
+sp / sp,NULL,1
+serra redonda,NULL,1
+serrana,NULL,1
+sertanopolis,NULL,1
+sinop,NULL,1
+socorro,NULL,1
+soledade,NULL,1
+sao pedro da aldeia,NULL,1
+são paulo,NULL,1
+sao paulo / sao paulo,NULL,1
+sao paulo sp,NULL,1
+sao paulop,NULL,1
+sao pauo,NULL,1
+sbc,NULL,1
+sbc/sp,NULL,1
+scao jose do rio pardo,NULL,1
+sao sebastiao,NULL,1
+sao sebastiao da grama/sp,NULL,1
+sao vicente,NULL,1
+sapiranga,NULL,1
+saquarema,NULL,1
+rio branco,NULL,1
+rio de janeiro / rio de janeiro,NULL,1
+rio de janeiro \rio de janeiro,NULL,1
+"rio de janeiro, rio de janeiro, brasil",NULL,1
+rio do oeste,NULL,1
+rio das pedras,NULL,1
+rio grande,NULL,1
+rio negrinho,NULL,1
+rio verde,NULL,1
+robeirao preto,NULL,1
+santa rosa de viterbo,NULL,1
+santa terezinha de goias,NULL,1
+santa catarina,NULL,1
+santa cecilia,NULL,1
+santa cruz do sul,NULL,1
+rolante,NULL,1
+ronda alta,NULL,1
+s jose do rio preto,NULL,1
+sabara,NULL,1
+sando andre,NULL,1
+santa barbara d oeste,NULL,1
+sao luis,NULL,1
+sao miguel do oeste,NULL,1
+sao miguel d'oeste,NULL,1
+sao paluo,NULL,1
+sao jose dos pinhas,NULL,1
+sao jose do rio pret,NULL,1
+sao joaquim da barra,NULL,1
+sao joao da boa vista,NULL,1
+sao francisco do sul,NULL,1
+santa maria da serra,NULL,1
+santo andre/sao paulo,NULL,1
+santo angelo,NULL,1
+santo antonio da patrulha,NULL,1
+santo antonio de padua,NULL,1
+santo antonio de posse,NULL,1
+sao bernardo do capo,NULL,1
+sao  jose dos pinhais,NULL,1
+sao  paulo,NULL,1
+sao bento,NULL,1
+almirante tamandare,NULL,1
+alvares machado,NULL,1
+alvorada,NULL,1
+ampere,NULL,1
+NULL,PI,1
+04482255,NULL,1
+abadia de goias,NULL,1
+afonso claudio,NULL,1
+aguas claras df,NULL,1
+alambari,NULL,1
+NULL,PA,1
+NULL,AC,1
+NULL,AM,1
+NULL,MA,1
+arinos,NULL,1
+araquari,NULL,1
+ararangua,NULL,1
+angra dos reis,NULL,1
+angra dos reis rj,NULL,1
+ao bernardo do campo,NULL,1
+aparecida,NULL,1
+aparecida de goiania,NULL,1
+aperibe,NULL,1
+andira-pr,NULL,1
+aracaju,NULL,1
+arraial d'ajuda (porto seguro),NULL,1
+arvorezinha,NULL,1
+auriflama,NULL,1
+auriflama/sp,NULL,1
+avare,NULL,1
+bage,NULL,1
+bahia,NULL,1
+balenario camboriu,NULL,1
+bandeirantes,NULL,1
+barbacena,NULL,1
+barbacena/ minas gerais,NULL,1
+barra velha,NULL,1
+barrinha,NULL,1
+barro alto,NULL,1
+belo horizont,NULL,1
+bebedouro,NULL,1
+bertioga,NULL,1
+bom jardim,NULL,1
+bom jesus dos perdoes,NULL,1
+bombinhas,NULL,1
+bonfinopolis de minas,NULL,1
+braco do norte,NULL,1
+bocaiuva do sul,NULL,1
+bofete,NULL,1
+buritama,NULL,1
+cacador,NULL,1
+cachoeira do sul,NULL,1
+brasilia df,NULL,1
+brejao,NULL,1
+brotas,NULL,1
+campo magro,NULL,1
+campo mourao,NULL,1
+campos dos goytacazes,NULL,1
+campos novos,NULL,1
+cananeia,NULL,1
+caieiras,NULL,1
+camboriu,NULL,1
+campanha,NULL,1
+campina das missoes,NULL,1
+campina grande,NULL,1
+california,NULL,1
+camanducaia,NULL,1
+campo do meio,NULL,1
+carapicuiba / sao paulo,NULL,1
+caratinga,NULL,1
+castro pires,NULL,1
+cataguases,NULL,1
+cariacica / es,NULL,1
+carmo da mata,NULL,1
+carmo do cajuru,NULL,1
+imbituva,NULL,1
+imigrante,NULL,1
+ipua,NULL,1
+irati,NULL,1
+irece,NULL,1
+itabira,NULL,1
+itaborai,NULL,1
+itapema,NULL,1
+itapeva,NULL,1
+itaporanga,NULL,1
+itapui,NULL,1
+itirapina,NULL,1
+itau de minas,NULL,1
+ivoti,NULL,1
+jacarei / sao paulo,NULL,1
+jales,NULL,1
+jambeiro,NULL,1
+janauba,NULL,1
+japira,NULL,1
+jaragua,NULL,1
+jaciara,NULL,1
+ibia,NULL,1
+ibirite,NULL,1
+icara,NULL,1
+guiricema,NULL,1
+holambra,NULL,1
+horizontina,NULL,1
+igrejinha,NULL,1
+ilheus,NULL,1
+ilicinea,NULL,1
+imbe,NULL,1
+ipaussu,NULL,1
+ipe,NULL,1
+garulhos,NULL,1
+garuva,NULL,1
+goioere,NULL,1
+governador valadares,NULL,1
+guaimbe,NULL,1
+guanambi,NULL,1
+guanhaes,NULL,1
+guara,NULL,1
+guarapuava,NULL,1
+guaratingueta,NULL,1
+guariba,NULL,1
+descalvado,NULL,1
+divisa nova,NULL,1
+cruzeiro,NULL,1
+coxim,NULL,1
+cravinhos,NULL,1
+cordeiropolis,NULL,1
+cordilheira alta,NULL,1
+cornelio procopio,NULL,1
+concordia,NULL,1
+condor,NULL,1
+congonhal,NULL,1
+congonhas,NULL,1
+clementina,NULL,1
+colatina,NULL,1
+colorado,NULL,1
+cascavael,NULL,1
+caucaia,NULL,1
+cianorte,NULL,1
+centro,NULL,1
+cerqueira cesar,NULL,1
+floresta,NULL,1
+fronteira,NULL,1
+gama,NULL,1
+francisco morato,NULL,1
+formosa do oeste,NULL,1
+floranopolis,NULL,1
+ferraz de  vasconcelos,NULL,1
+eunapolis,NULL,1
+eusebio,NULL,1
+extrema,NULL,1
+feira de santana,NULL,1
+fernando prestes,NULL,1
+dracena,NULL,1
+domingos martins,NULL,1
+embu guacu,NULL,1
+engenheiro coelho,NULL,1
+entre rios do oeste,NULL,1
+erechim,NULL,1
+vitoria de santo antao,NULL,1
+xaxim,NULL,1
+viana,NULL,1
+vicente de carvalho,NULL,1
+vargem grande paulista,NULL,1
+vendas@creditparts.com.br,NULL,1
+vera cruz,NULL,1
+vespasiano,NULL,1

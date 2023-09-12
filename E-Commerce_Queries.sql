@@ -47,21 +47,14 @@ JOIN product_category_name_translation pcnt ON p.product_category_name = pcnt.pr
 GROUP BY p.product_category_name, pcnt.product_category_name_english
 ORDER BY total_sold DESC;
 
---What is the average review score of the most popular items?
-SELECT t10.product_id, AVG(o_r.review_score) AS average_review
+--What is the average price and average review score of the most popular items?
+SELECT t10.product_id, AVG(oi.price) AS average_price, AVG(o_r.review_score) AS average_review
 FROM orders o
 JOIN order_reviews o_r ON o.order_id = o_r.order_id
 JOIN order_items oi ON o.order_id = oi.order_id
 JOIN top_10_products t10 ON oi.product_id = t10.product_id
 GROUP BY t10.product_id
 ORDER BY average_review DESC;
-
---What are the prices of these products?
-SELECT DISTINCT t10.product_id, AVG(oi.price) AS average_price
-FROM order_items oi
-JOIN top_10_products t10 ON oi.product_id = t10.product_id
-GROUP BY t10.product_id
-ORDER BY average_price DESC;
 
 --Find if there is a correlation between the price of an item and the review of an item.
 SELECT t10.product_id, oi.price, o_r.review_score, COUNT(t10.product_id) AS count_of_score
@@ -80,7 +73,7 @@ JOIN orders o ON op.order_id = o.order_id
 JOIN order_items oi ON o.order_id = oi.order_id
 JOIN top_10_products t10 ON oi.product_id = t10.product_id
 GROUP BY t10.product_id, t10.number_sold, op.payment_type
-ORDER BY t10.number_sold DESC
+ORDER BY t10.number_sold DESC;
 
 
 /******************************************************************************************************************************/
@@ -136,7 +129,7 @@ CREATE VIEW delivery_outcomes AS
 				THEN 'On time'
 			WHEN o.order_delivered_customer_date > o.order_estimated_delivery_date
 				THEN 'Late'
-			WHEN o.order_delivered_customer_date IS NULL
+			WHEN o.order_delivered_customer_date IS NULL OR o.order_delivered_customer_date = ''
 				THEN 'Cancelled'
 		END AS delivery_outcome
 	FROM orders o;

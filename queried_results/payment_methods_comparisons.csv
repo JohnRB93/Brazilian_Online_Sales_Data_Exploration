@@ -1,4 +1,5 @@
-﻿aca2eb7d00ea1a7b8ebd4e68314663af,boleto,142
+﻿product_id, payment_type, count_of_payment_type
+aca2eb7d00ea1a7b8ebd4e68314663af,boleto,142
 aca2eb7d00ea1a7b8ebd4e68314663af,credit_card,369
 aca2eb7d00ea1a7b8ebd4e68314663af,debit_card,10
 aca2eb7d00ea1a7b8ebd4e68314663af,voucher,15
